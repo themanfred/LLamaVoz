@@ -1,0 +1,18 @@
+# Build outputs
+bin/
+obj/
+*.user
+.vs/
+
+# Whisper models (~220 MB) — see models/README.md for download instructions
+models/*
+!models/README.md
+
+# Generated TTS test audio (regenerated automatically by the eval suite)
+poc/audio/
+evals/audio/
+*.wav
+
+# OS noise
+Thumbs.db
+Desktop.ini

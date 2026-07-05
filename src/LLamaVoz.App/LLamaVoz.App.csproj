@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>LLamaVoz.DesktopApp</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <ApplicationIcon>Assets\llamavoz.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Assets\llamavoz.ico" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="Assets\logo.png" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Whisper.net" Version="1.5.0" />
+    <PackageReference Include="Whisper.net.Runtime" Version="1.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="LLamaVoz.Core.Tests" />
+    <InternalsVisibleTo Include="LLamaVoz.Evals" />
+    <InternalsVisibleTo Include="LLamaVoz.Poc.Eval" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LLamaVoz.Core\LLamaVoz.Core.csproj" />
+    <ProjectReference Include="..\LLamaVoz.Insertion\LLamaVoz.Insertion.csproj" />
+    <ProjectReference Include="..\LLamaVoz.Audio\LLamaVoz.Audio.csproj" />
+  </ItemGroup>
+
+</Project>

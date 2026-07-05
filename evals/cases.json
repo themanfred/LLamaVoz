@@ -1,0 +1,46 @@
+{
+  "cases": [
+    {
+      "id": "test-es",
+      "file": "poc/audio/test-es.wav",
+      "lang": "es",
+      "voice": "Microsoft Sabina Desktop",
+      "reference": "Hola, esta es una prueba de dictado local. Mañana tengo una reunión a las tres de la tarde con el equipo de desarrollo."
+    },
+    {
+      "id": "test-en",
+      "file": "poc/audio/test-en.wav",
+      "lang": "en",
+      "voice": "Microsoft Zira Desktop",
+      "reference": "Hello, this is a local dictation test. Tomorrow I have a meeting at three in the afternoon with the development team."
+    },
+    {
+      "id": "numbers-es",
+      "file": "evals/audio/numbers-es.wav",
+      "lang": "es",
+      "voice": "Microsoft Sabina Desktop",
+      "reference": "El total es 1250 euros. La reunión es el 3 de marzo de 2024 a las 4 de la tarde. Llama al 555 123 456."
+    },
+    {
+      "id": "propernouns-en",
+      "file": "evals/audio/propernouns-en.wav",
+      "lang": "en",
+      "voice": "Microsoft Zira Desktop",
+      "reference": "My name is Thomas and I work with Microsoft Windows, Whisper and PowerShell in Barcelona with my colleague David."
+    },
+    {
+      "id": "paragraph-es",
+      "file": "evals/audio/paragraph-es.wav",
+      "lang": "es",
+      "voice": "Microsoft Sabina Desktop",
+      "reference": "La aplicación de dictado por voz funciona completamente en tu computadora. Cuando presionas el atajo de teclado, el micrófono empieza a grabar tu voz. El audio se procesa con un modelo de reconocimiento local y el texto aparece donde está tu cursor. Nada sale de tu equipo sin tu permiso. La privacidad es el principio más importante del producto. Puedes cancelar en cualquier momento con la tecla de escape y el audio se descarta de inmediato."
+    },
+    {
+      "id": "short-es",
+      "file": "evals/audio/short-es.wav",
+      "lang": "es",
+      "voice": "Microsoft Sabina Desktop",
+      "reference": "sí"
+    }
+  ]
+}
